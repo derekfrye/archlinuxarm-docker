@@ -1,0 +1,10 @@
+rootfs/amd64/etc/pacman.d/mirrorlist
+rootfs/arm32v5/etc/pacman.d/mirrorlist
+.gitignore
+rootfs/arm32v6/etc/pacman.d/mirrorlist
+rootfs/arm32v7/etc/pacman.d/mirrorlist
+rootfs/arm64v8/etc/pacman.d/mirrorlist
+rootfs/common/etc/locale.conf
+rootfs/common/etc/locale.gen
+rootfs/common/usr/share/libalpm/hooks/man-page-remove.hook
+rootfs/common/usr/share/libalpm/hooks/package-cleanup.hook
