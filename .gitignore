@@ -6,4 +6,4 @@
 
 #rootfs/common/usr/share/libalpm/hooks/man-page-remove.hook
 #rootfs/common/usr/share/libalpm/hooks/package-cleanup.hook
-rootfs/arm64v8/etc/pacman.d/mirrorlist
+#rootfs/arm64v8/etc/pacman.d/mirrorlist
