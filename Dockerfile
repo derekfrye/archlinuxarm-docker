@@ -8,7 +8,7 @@ RUN mkdir -p /archlinux/rootfs
 COPY pacstrap-docker /archlinux/
 
 RUN ./pacstrap-docker /archlinux/rootfs \
-      bash sed gzip pacman archlinux-keyring iputils iproute2 w3m && \
+      archlinux-keyring bash coreutils gzip iputils iproute2 man-db man-pages pacman sed tar w3m zsh && \
     # Install Arch Linux ARM keyring if available
     (pacman -r /archlinux/rootfs -S --noconfirm archlinuxarm-keyring || true) && \
     # Remove current pacman database, likely outdated very soon
@@ -28,4 +28,4 @@ RUN locale-gen && \
     pacman-key --populate archlinux && \
     (pacman-key --populate archlinuxarm || true)
 
-CMD ["/usr/bin/bash"]
+CMD ["/usr/sbin/zsh"]
